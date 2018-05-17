@@ -74,7 +74,7 @@ def cadastro_vestibulares(request):
     'year':datetime.now().year,
     })
 )
-def cadastro_vestibulares(request):
+def lista_alunos(request):
     assert isinstance(request, HttpRequest)
     return render(
     request,
