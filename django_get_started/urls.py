@@ -17,6 +17,8 @@ urlpatterns = patterns('',
     url(r'^contact$', 'app.views.contact', name='contact'),
     url(r'^about', 'app.views.about', name='about'),
     url(r'^cadastro_cursos', 'app.views.cadastro_cursos', name='cadastro_cursos'),
+    url(r'^cadastro_vestibulares', 'app.views.cadastro_vestibulares’, name='cadastro_vestibulares'),
+    url(r'^lista_alunos', 'app.views.lista_alunos’, name='lista_alunos'),
     url(r'^login/$',
         'django.contrib.auth.views.login',
         {
@@ -43,5 +45,4 @@ urlpatterns = patterns('',
     # url(r'^admin/', include(admin.site.urls)),
 )
 
-    url(r'^cadastro_vestibulares', 'app.views.cadastro_vestibulares’, name='cadastro_vestibulares'),
-     url(r'^lista_alunos', 'app.views.lista_alunos’, name='lista_alunos'),
+
