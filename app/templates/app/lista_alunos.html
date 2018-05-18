@@ -4,10 +4,9 @@
 <h1>Lista de Alunos</h1>
 </div>
 <table class="table">
-<tr><th>Nome dos Alunos</th></tr>
-  teste
-{% for alunos in aluno %}
-<tr><td>{{ aluno.nome }}</td></tr>
+<tr><th>Nome dos Candidatos</th></tr>
+{% for candidato in candidatos %}
+<tr><td>{{ candidato.nome_completo }}</td></tr>
 {% endfor %}
 </table>
 {% endblock %}
