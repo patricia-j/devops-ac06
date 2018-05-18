@@ -81,7 +81,7 @@ def lista_alunos(request):
     'app/lista_alunos.html', context_instance = RequestContext(request,
     {
     'title':'Lista de Alunos',
-    'vestibulares': Candidato.objects.all( ),
+    'vestibulares': Candidatos.objects.all( ),
     'year':datetime.now().year,
     })
 )
